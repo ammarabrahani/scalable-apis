@@ -35,7 +35,9 @@ if not all([AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_S3_BUCKET_NAME]):
     raise RuntimeError("AWS credentials or bucket name are missing! Check your .env file.")
 
 # ✅ Poppler Path (PDF to Image Converter)
-POPPLER_PATH = r"C:\poppler\Library\bin"  # Windows Example
+# POPPLER_PATH = r"C:\poppler\Library\bin"  # Windows Example
+POPPLER_PATH = "/usr/bin"  # linux
+
 IMAGE_DIR = "static/images"
 os.makedirs(IMAGE_DIR, exist_ok=True)
 
