@@ -19,7 +19,7 @@ DB_NAME = os.getenv("DB_NAME", "database-1")  # ✅ Changed hyphen to underscore
 DB_PORT = os.getenv("DB_PORT", "3306")
 
 # ✅ Connection URL for SQLAlchemy
-DATABASE_URL = f"mysql+mysqlconnector://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+DATABASE_URL = "mysql+mysqlconnector://root:ammar@localhost:3306/database_1"
 
 logger.info(f"Database URL: {DATABASE_URL}")
 
